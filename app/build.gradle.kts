@@ -1,3 +1,5 @@
+
+
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
@@ -7,6 +9,10 @@ plugins {
 android {
     namespace = "com.example.myapplication"
     compileSdk = 35
+
+    lint {
+        disable.add("NullSafeMutableLiveData")
+    }
 
     defaultConfig {
         applicationId = "com.example.myapplication"

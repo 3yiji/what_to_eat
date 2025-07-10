@@ -37,8 +37,8 @@ class MainActivity : ComponentActivity() {
 fun LunchSuggester() {
     var mealName by remember { mutableStateOf("") }
     var mealName_trans by remember { mutableStateOf("") }
-    var mealThumb by remember { mutableStateOf<String?>(null) }
-    var mealInstructions by remember { mutableStateOf<String?>(null) }
+    var mealThumb by remember { mutableStateOf<String?>("") }
+    var mealInstructions by remember { mutableStateOf<String?>("") }
     var loading by remember { mutableStateOf(false) }
     val scope = rememberCoroutineScope()
 
